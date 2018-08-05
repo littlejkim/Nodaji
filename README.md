@@ -5,7 +5,8 @@ Nodaji iOS Repository
 
 - [Introduction](#introduction)
 - [Scope](#scope)
-- [Technical Specifications](#technical specification)
+- [Technical Specifications](#technicalspecification)
+- [Wireframe](#wireframe)
 
 ## Introduction
 Nodaji is an e-commerce platform that provides an intuitive and easy way to buy/sell clothing.
@@ -37,3 +38,6 @@ Possible specifications:
 
 Roadmap
 ![alt text](https://i.redd.it/ix44k24k9ik01.png)
+
+## Wireframe
+TODO : insert wireframe pdf
