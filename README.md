@@ -37,3 +37,5 @@ Possible specifications:
 
 Roadmap
 ![alt text](https://i.redd.it/ix44k24k9ik01.png)
+
+![alt text](https://github.com/littlejkim/nodaji/blob/master/wireframe_image.png)
