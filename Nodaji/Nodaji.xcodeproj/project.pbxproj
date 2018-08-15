@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC488CD421240A6200F41DB5 /* SellLayoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC488CD321240A6200F41DB5 /* SellLayoutController.swift */; };
+		EC488CD621240CF100F41DB5 /* ProfileLayoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC488CD521240CF100F41DB5 /* ProfileLayoutController.swift */; };
+		EC488CD821240D1200F41DB5 /* HomeLayoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC488CD721240D1200F41DB5 /* HomeLayoutController.swift */; };
+		EC488CDA21240D3100F41DB5 /* InboxLayoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC488CD921240D3100F41DB5 /* InboxLayoutController.swift */; };
+		EC488CDC21240D6C00F41DB5 /* NotificationLayoutContorller.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC488CDB21240D6C00F41DB5 /* NotificationLayoutContorller.swift */; };
 		EC7E24162116DF61000BF102 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7E24152116DF61000BF102 /* AppDelegate.swift */; };
-		EC7E24182116DF61000BF102 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7E24172116DF61000BF102 /* ViewController.swift */; };
-		EC7E241B2116DF61000BF102 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7E24192116DF61000BF102 /* Main.storyboard */; };
+		EC7E24182116DF61000BF102 /* RootLayoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7E24172116DF61000BF102 /* RootLayoutController.swift */; };
+		EC7E241B2116DF61000BF102 /* RootLayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7E24192116DF61000BF102 /* RootLayout.storyboard */; };
 		EC7E241D2116DF63000BF102 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC7E241C2116DF63000BF102 /* Assets.xcassets */; };
 		EC7E24202116DF63000BF102 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7E241E2116DF63000BF102 /* LaunchScreen.storyboard */; };
 		EC7E242B2116DF63000BF102 /* NodajiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7E242A2116DF63000BF102 /* NodajiTests.swift */; };
@@ -26,16 +31,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC488CD321240A6200F41DB5 /* SellLayoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellLayoutController.swift; sourceTree = "<group>"; };
+		EC488CD521240CF100F41DB5 /* ProfileLayoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileLayoutController.swift; sourceTree = "<group>"; };
+		EC488CD721240D1200F41DB5 /* HomeLayoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLayoutController.swift; sourceTree = "<group>"; };
+		EC488CD921240D3100F41DB5 /* InboxLayoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxLayoutController.swift; sourceTree = "<group>"; };
+		EC488CDB21240D6C00F41DB5 /* NotificationLayoutContorller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationLayoutContorller.swift; sourceTree = "<group>"; };
 		EC7E24122116DF61000BF102 /* Nodaji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nodaji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC7E24152116DF61000BF102 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EC7E24172116DF61000BF102 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EC7E241A2116DF61000BF102 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC7E24172116DF61000BF102 /* RootLayoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootLayoutController.swift; sourceTree = "<group>"; };
+		EC7E241A2116DF61000BF102 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/RootLayout.storyboard; sourceTree = "<group>"; };
 		EC7E241C2116DF63000BF102 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC7E241F2116DF63000BF102 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC7E24212116DF63000BF102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC7E24262116DF63000BF102 /* NodajiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NodajiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC7E242A2116DF63000BF102 /* NodajiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodajiTests.swift; sourceTree = "<group>"; };
 		EC7E242C2116DF63000BF102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC7E24362116EC30000BF102 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KakaoOpenSDK.framework; path = ../../la/KakaoOpenSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +73,7 @@
 				EC7E24142116DF61000BF102 /* Nodaji */,
 				EC7E24292116DF63000BF102 /* NodajiTests */,
 				EC7E24132116DF61000BF102 /* Products */,
+				EC7E24352116EC30000BF102 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,11 +89,10 @@
 		EC7E24142116DF61000BF102 /* Nodaji */ = {
 			isa = PBXGroup;
 			children = (
-				EC7E24152116DF61000BF102 /* AppDelegate.swift */,
-				EC7E24172116DF61000BF102 /* ViewController.swift */,
-				EC7E24192116DF61000BF102 /* Main.storyboard */,
-				EC7E241C2116DF63000BF102 /* Assets.xcassets */,
-				EC7E241E2116DF63000BF102 /* LaunchScreen.storyboard */,
+				EC7E243921172301000BF102 /* Application Delegate */,
+				EC7E243A21172319000BF102 /* View Controllers */,
+				EC7E243C21172335000BF102 /* Storyboards */,
+				EC7E243E21172354000BF102 /* Resources */,
 				EC7E24212116DF63000BF102 /* Info.plist */,
 			);
 			path = Nodaji;
@@ -94,6 +105,84 @@
 				EC7E242C2116DF63000BF102 /* Info.plist */,
 			);
 			path = NodajiTests;
+			sourceTree = "<group>";
+		};
+		EC7E24352116EC30000BF102 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC7E24362116EC30000BF102 /* KakaoOpenSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC7E243921172301000BF102 /* Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				EC7E24152116DF61000BF102 /* AppDelegate.swift */,
+			);
+			path = "Application Delegate";
+			sourceTree = "<group>";
+		};
+		EC7E243A21172319000BF102 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EC7E24172116DF61000BF102 /* RootLayoutController.swift */,
+				EC488CD321240A6200F41DB5 /* SellLayoutController.swift */,
+				EC488CD521240CF100F41DB5 /* ProfileLayoutController.swift */,
+				EC488CD721240D1200F41DB5 /* HomeLayoutController.swift */,
+				EC488CD921240D3100F41DB5 /* InboxLayoutController.swift */,
+				EC488CDB21240D6C00F41DB5 /* NotificationLayoutContorller.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		EC7E243C21172335000BF102 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EC7E24192116DF61000BF102 /* RootLayout.storyboard */,
+				EC7E243D21172347000BF102 /* Launch Screen */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		EC7E243D21172347000BF102 /* Launch Screen */ = {
+			isa = PBXGroup;
+			children = (
+				EC7E241E2116DF63000BF102 /* LaunchScreen.storyboard */,
+			);
+			path = "Launch Screen";
+			sourceTree = "<group>";
+		};
+		EC7E243E21172354000BF102 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EC7E2444211723A8000BF102 /* Supporting Files */,
+				EC7E24432117239F000BF102 /* Localization */,
+				EC7E244021172375000BF102 /* Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EC7E244021172375000BF102 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				EC7E241C2116DF63000BF102 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		EC7E24432117239F000BF102 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		EC7E2444211723A8000BF102 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,7 +268,7 @@
 			files = (
 				EC7E24202116DF63000BF102 /* LaunchScreen.storyboard in Resources */,
 				EC7E241D2116DF63000BF102 /* Assets.xcassets in Resources */,
-				EC7E241B2116DF61000BF102 /* Main.storyboard in Resources */,
+				EC7E241B2116DF61000BF102 /* RootLayout.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,8 +286,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC7E24182116DF61000BF102 /* ViewController.swift in Sources */,
+				EC488CDC21240D6C00F41DB5 /* NotificationLayoutContorller.swift in Sources */,
+				EC488CD421240A6200F41DB5 /* SellLayoutController.swift in Sources */,
+				EC7E24182116DF61000BF102 /* RootLayoutController.swift in Sources */,
 				EC7E24162116DF61000BF102 /* AppDelegate.swift in Sources */,
+				EC488CD621240CF100F41DB5 /* ProfileLayoutController.swift in Sources */,
+				EC488CDA21240D3100F41DB5 /* InboxLayoutController.swift in Sources */,
+				EC488CD821240D1200F41DB5 /* HomeLayoutController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,12 +315,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EC7E24192116DF61000BF102 /* Main.storyboard */ = {
+		EC7E24192116DF61000BF102 /* RootLayout.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				EC7E241A2116DF61000BF102 /* Base */,
 			);
-			name = Main.storyboard;
+			name = RootLayout.storyboard;
 			sourceTree = "<group>";
 		};
 		EC7E241E2116DF63000BF102 /* LaunchScreen.storyboard */ = {
@@ -361,6 +455,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V54GW3S66H;
 				INFOPLIST_FILE = Nodaji/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -379,6 +474,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V54GW3S66H;
 				INFOPLIST_FILE = Nodaji/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
