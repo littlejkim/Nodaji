@@ -48,7 +48,7 @@ TODO : insert wireframe pdf
 Jung
 
 |       WEEK        |      TASK        |          STATUS    |
-| ------------------- | ---------------- |
+| ------------------- | ---------------- | :---------------: |
 | Week 1  | Learn Swift, Apple Human Interface Guidlines (https://developer.apple.com/design/human-interface-guidelines/) |  -   |
 | Week 2  | Begin Profile Page using Storyboard  |  -  |
 | Week 3 | Finish Profile Page |  -  |
