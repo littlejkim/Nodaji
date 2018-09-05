@@ -46,9 +46,10 @@ TODO : insert wireframe pdf
 ## Schedule
 
 Jung
+
 |     WEEK      |     TASK      |
 | ------------- | ------------- |
-| Week 1  | Learn Swift, Apple Human Interface Guidlines (https://developer.apple.com/design/human-interface-guidelines/)  |
+| Week 1  | Learn Swift, Apple Human Interface Guidlines (https://developer.apple.com/design/human-interface-guidelines/) |
 | Week 2  | Begin Profile Page using Storyboard  |
 | Week 3 | Finish Profile Page |
 | Week 4 | Research DBs to handle real-time messaging/notification |
