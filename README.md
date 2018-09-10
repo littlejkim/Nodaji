@@ -7,6 +7,7 @@ Nodaji iOS Repository
 - [Scope](#scope)
 - [Technical Specifications](#technicalspecification)
 - [Wireframe](#wireframe)
+- [Schedule](#schedule)
 
 ## Introduction
 Nodaji is an e-commerce platform that provides an intuitive and easy way to buy/sell clothing.
@@ -41,3 +42,48 @@ Roadmap
 
 ## Wireframe
 TODO : insert wireframe pdf
+
+## Schedule
+
+Jung
+
+|       PROGRESS        |      TASK        |          STATUS    |
+| ------------------- | ---------------- | :---------------: |
+| Week 1  | Learn Swift, Apple Human Interface Guidlines (https://developer.apple.com/design/human-interface-guidelines/) |  -   |
+| Week 2  | Begin Profile Page using Storyboard  |  -  |
+| Week 3 | Finish Profile Page |  -  |
+| Week 4 | Research DBs to handle real-time messaging/notification |  -  |
+| Week 5 | Begin Notification Page |  -  |
+| Week 6 | Finish Notification Page |  -  |
+| Week 7 | Begin Inbox Page |  -  |
+| Week 8 | Finish Inbox Page |  -  |
+| Week 9 | Test Messaging between Profiles|  -  |
+| Week 10 | Test Profile, Notification, Inbox Pages |  -  |
+
+John
+
+|       PROGRESS        |      TASK        |          STATUS    |
+| ------------------- | ---------------- | :---------------: |
+| Week 1  | Finish Sell Page |  -   |
+| Week 2  | Begin Home Page (UICollectionView) |  -  |
+| Week 3 | Work on Home Page |  -  |
+| Week 4 | Finish Home Page |  -  |
+| Week 5 | Test Sell Page and Home Page |  -  |
+| Week 6 | Start integrating with DB (product sell and buy) |  -  |
+| Week 7 | Configure app settings (LaunchScreen, AppDelegate) |  -  |
+| Week 8 | Test client/server |  -  |
+| Week 9 | Integrate Profile Page in product listing  -  |
+| Week 10 | Integrate Messaging within product listing |  -  |
+
+Both
+
+|       PROGRESS        |      TASK        |          STATUS    |
+| ------------------- | ---------------- | :---------------: |
+| Week 11  | Start integrating all pages |  -   |
+| Week 12  | TEST TEST TEST |  -  |
+| Week 13 | TEST TEST TEST | - |
+| Week 14 | QA |
+| Week 15 | App feedback |
+| Week 16 | Placeholder |
+| Week 17 | Placeholder |
+| Week 18 | Placeholder |
