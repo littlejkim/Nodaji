@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SellLayoutController: UIViewController {
+class SellLayoutController: UIViewController, UIImagePickerController {
     @IBOutlet weak var priceField: UITextField!
     @IBOutlet weak var deliveryFeeField: UITextField!
     @IBOutlet weak var priceLabel: UILabel!
@@ -17,6 +17,8 @@ class SellLayoutController: UIViewController {
     @IBOutlet weak var categoryField: UITextField!
     @IBOutlet weak var sizeField: UITextField!
     @IBOutlet weak var totalPriceLabel: UILabel!
+    @IBOutlet weak var uploadImage: UIButton!
+    @IBOutlet weak var imageView: UIImageView!
     
     
     let brands = ["Balenciaga", "Gucci", "Versace", "Givenchy", "Other"]
