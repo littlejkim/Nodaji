@@ -18,6 +18,7 @@
 		EC7E241D2116DF63000BF102 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC7E241C2116DF63000BF102 /* Assets.xcassets */; };
 		EC7E24202116DF63000BF102 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7E241E2116DF63000BF102 /* LaunchScreen.storyboard */; };
 		EC7E242B2116DF63000BF102 /* NodajiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7E242A2116DF63000BF102 /* NodajiTests.swift */; };
+		ECC0A5BB214C744F004AC2B0 /* RegistrationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC0A5BA214C744F004AC2B0 /* RegistrationStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		EC7E242A2116DF63000BF102 /* NodajiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodajiTests.swift; sourceTree = "<group>"; };
 		EC7E242C2116DF63000BF102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC7E24362116EC30000BF102 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KakaoOpenSDK.framework; path = ../../la/KakaoOpenSDK.framework; sourceTree = "<group>"; };
+		ECC0A5BA214C744F004AC2B0 /* RegistrationStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegistrationStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				EC7E24192116DF61000BF102 /* RootLayout.storyboard */,
+				ECC0A5BA214C744F004AC2B0 /* RegistrationStoryboard.storyboard */,
 				EC7E243D21172347000BF102 /* Launch Screen */,
 			);
 			path = Storyboards;
@@ -266,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECC0A5BB214C744F004AC2B0 /* RegistrationStoryboard.storyboard in Resources */,
 				EC7E24202116DF63000BF102 /* LaunchScreen.storyboard in Resources */,
 				EC7E241D2116DF63000BF102 /* Assets.xcassets in Resources */,
 				EC7E241B2116DF61000BF102 /* RootLayout.storyboard in Resources */,

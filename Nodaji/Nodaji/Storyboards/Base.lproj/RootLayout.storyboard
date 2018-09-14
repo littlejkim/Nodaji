@@ -43,7 +43,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uwa-MS-9Pc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="433" y="600"/>
+            <point key="canvasLocation" x="286" y="629"/>
         </scene>
         <!--Profile-->
         <scene sceneID="eiO-IX-DIA">
@@ -82,7 +82,6 @@
         <!--SELL-->
         <scene sceneID="KUL-HR-8ub">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ffG-pf-sbI" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="s7T-X5-Fdp" customClass="SellLayoutController" customModule="Nodaji" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cw9-xY-4xo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
@@ -244,13 +243,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RSw-x5-HMZ">
-                                <rect key="frame" x="-388" y="53" width="911" height="804"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -297,6 +289,7 @@
                         <outlet property="sizeField" destination="w0t-Ql-YLw" id="46l-Sa-7k2"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ffG-pf-sbI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="394.20289855072468" y="-923.64130434782612"/>
         </scene>
