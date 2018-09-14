@@ -247,6 +247,9 @@
                                 <rect key="frame" x="27" y="422" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="uploadImage:" destination="s7T-X5-Fdp" eventType="touchUpInside" id="A9Q-oS-wp3"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aZf-7j-35D">
                                 <rect key="frame" x="27" y="460" width="75" height="75"/>
@@ -294,10 +297,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="brandField" destination="Nbs-nf-Ddp" id="LxF-yP-YNy"/>
-                        <outlet property="imageView" destination="aZf-7j-35D" id="hXl-QL-6F4"/>
                         <outlet property="priceField" destination="xtx-Zz-4Mr" id="2dw-lY-kBf"/>
                         <outlet property="sizeField" destination="w0t-Ql-YLw" id="46l-Sa-7k2"/>
-                        <outlet property="uploadImage" destination="786-Jb-NDV" id="rlm-fL-fhv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ffG-pf-sbI" userLabel="First Responder" sceneMemberID="firstResponder"/>
