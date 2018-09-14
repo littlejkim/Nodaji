@@ -17,7 +17,7 @@ class SellLayoutController: UIViewController, UIImagePickerControllerDelegate {
     @IBOutlet weak var categoryField: UITextField!
     @IBOutlet weak var sizeField: UITextField!
     @IBOutlet weak var totalPriceLabel: UILabel!
-    let imagepicker = UIImagePickerController
+    let imagepicker = UIImagePickerController()
     
 
     @IBOutlet weak var imageView: UIImageView!
