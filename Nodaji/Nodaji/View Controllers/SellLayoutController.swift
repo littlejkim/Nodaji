@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SellLayoutController: UIViewController, UIImagePickerControllerDelegate {
+class SellLayoutController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     @IBOutlet weak var priceField: UITextField!
     @IBOutlet weak var deliveryFeeField: UITextField!
     @IBOutlet weak var priceLabel: UILabel!
@@ -23,9 +23,20 @@ class SellLayoutController: UIViewController, UIImagePickerControllerDelegate {
     @IBOutlet weak var imageView: UIImageView!
     
     @IBAction func uploadImage(_ sender: UIButton) {
+        imagepicker.delegate = self
+        imagepicker.sourceType = UIImagePickerControllerSourceType.savedPhotosAlbum
+        self.present(imagepicker, animated: true, completion: nil)
         
     }
     
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            imageView.image = image
+        } else{
+            print("Something went wrong")
+        }
+        dismiss(animated: true, completion: nil)
+    }
     
     let brands = ["Balenciaga", "Gucci", "Versace", "Givenchy", "Other"]
     
