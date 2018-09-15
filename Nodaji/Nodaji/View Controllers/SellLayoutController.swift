@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import BSImagePicker
+import Photos
 
-class SellLayoutController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class SellLayoutController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UICollectionViewDelegate, UICollectionViewDataSource {
+ 
+    @IBOutlet weak var imageCollectionView: UICollectionView!
     @IBOutlet weak var priceField: UITextField!
     @IBOutlet weak var deliveryFeeField: UITextField!
     @IBOutlet weak var priceLabel: UILabel!
@@ -17,27 +21,68 @@ class SellLayoutController: UIViewController, UIImagePickerControllerDelegate, U
     @IBOutlet weak var categoryField: UITextField!
     @IBOutlet weak var sizeField: UITextField!
     @IBOutlet weak var totalPriceLabel: UILabel!
-    let imagepicker = UIImagePickerController()
-    
-
     @IBOutlet weak var imageView: UIImageView!
+    var SelectedAssets = [PHAsset]()
+    var productImages: [UIImage] = []
+
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return productImages.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = imageCollectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! SellCollectionViewCell
+        
+        cell.productImageView.image = productImages[indexPath.item]
+        return cell
+    }
+    
     
     @IBAction func uploadImage(_ sender: UIButton) {
-        imagepicker.delegate = self
-        imagepicker.sourceType = UIImagePickerControllerSourceType.savedPhotosAlbum
-        self.present(imagepicker, animated: true, completion: nil)
+        
+        let vc = BSImagePickerViewController()
+        
+        bs_presentImagePickerController(vc, animated: true,
+                                        select: { (asset: PHAsset) -> Void in
+                                            print("Selected: \(asset)")
+        }, deselect: { (asset: PHAsset) -> Void in
+            print("Deselected: \(asset)")
+        }, cancel: { (assets: [PHAsset]) -> Void in
+            print("Cancel: \(assets)")
+        }, finish: { (assets: [PHAsset]) -> Void in
+            print("Finish: \(assets)")
+            print(assets.count)
+            for i in 0..<assets.count
+            {
+                self.SelectedAssets.append(assets[i])
+                print(self.SelectedAssets)
+                self.getAllImages()
+            }
+
+        }, completion: self.imageCollectionView.reloadData)
         
     }
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
-            imageView.image = image
-        } else{
-            print("Something went wrong")
+    func getAllImages() -> Void {
+        print("Assets to images")
+        if SelectedAssets.count != 0{
+            for i in 0..<SelectedAssets.count{
+                print(i)
+                let manager = PHImageManager.default()
+                let option = PHImageRequestOptions()
+                var thumbnail = UIImage()
+                option.isSynchronous = true
+                manager.requestImage(for: SelectedAssets[i], targetSize: CGSize(width: 75, height: 75), contentMode: .aspectFill, options: option, resultHandler: {(result, info)->Void in
+                    thumbnail = result!
+                })
+                productImages.append(thumbnail)
+                
+            }
         }
-        dismiss(animated: true, completion: nil)
+        
+
     }
-    
+
     let brands = ["Balenciaga", "Gucci", "Versace", "Givenchy", "Other"]
     
     var selectedBrand: String?
@@ -46,9 +91,12 @@ class SellLayoutController: UIViewController, UIImagePickerControllerDelegate, U
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        imageCollectionView.dataSource = self
+        imageCollectionView.delegate = self
         createBrandPicker()
         createToolbar()
         print("Sell loaded")
+
     }
     
     func createBrandPicker() {

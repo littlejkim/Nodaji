@@ -1,0 +1,6 @@
+framework module Pods_Nodaji {
+  umbrella header "Pods-Nodaji-umbrella.h"
+
+  export *
+  module * { export * }
+}

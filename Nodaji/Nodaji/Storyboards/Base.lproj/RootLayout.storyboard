@@ -147,16 +147,6 @@
                                     <constraint firstAttribute="trailing" secondItem="w0t-Ql-YLw" secondAttribute="trailing" id="pZX-NB-pkS"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5c5-pp-2MP">
-                                <rect key="frame" x="20" y="568" width="335" height="40"/>
-                                <color key="backgroundColor" red="0.58271939766839376" green="0.58271939766839376" blue="0.58271939766839376" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="sq6-Bt-zHH"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
-                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="등록완료"/>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uz2-Vj-BPy" userLabel="Delivery Price">
                                 <rect key="frame" x="30" y="329" width="182" height="30"/>
                                 <subviews>
@@ -244,17 +234,43 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="786-Jb-NDV">
-                                <rect key="frame" x="27" y="422" width="46" height="30"/>
+                                <rect key="frame" x="299" y="389" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="uploadImage:" destination="s7T-X5-Fdp" eventType="touchUpInside" id="A9Q-oS-wp3"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aZf-7j-35D">
-                                <rect key="frame" x="27" y="460" width="75" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="DPh-mb-Nns">
+                                <rect key="frame" x="30" y="443" width="315" height="138"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Fcf-8d-LwR">
+                                    <size key="itemSize" width="75" height="75"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="P4r-Rd-IW2" customClass="SellCollectionViewCell" customModule="Nodaji" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cell" translatesAutoresizingMaskIntoConstraints="NO" id="kav-AK-Mef">
+                                                    <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <connections>
+                                            <outlet property="imageView" destination="kav-AK-Mef" id="LAQ-Tb-21L"/>
+                                            <outlet property="productImageView" destination="kav-AK-Mef" id="9lu-21-u22"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -263,12 +279,12 @@
                             <constraint firstItem="BZC-v7-RWE" firstAttribute="trailing" secondItem="V9C-4p-wbj" secondAttribute="trailing" constant="30" id="3ed-vw-WZ3"/>
                             <constraint firstItem="zbK-KB-c3Z" firstAttribute="leading" secondItem="BZC-v7-RWE" secondAttribute="leading" constant="30" id="4aU-qt-cNE"/>
                             <constraint firstItem="hA3-G6-qwJ" firstAttribute="width" secondItem="Cw9-xY-4xo" secondAttribute="width" multiplier="1:6" id="5VA-c5-hx2"/>
-                            <constraint firstItem="5c5-pp-2MP" firstAttribute="leading" secondItem="BZC-v7-RWE" secondAttribute="leading" constant="20" id="80b-E8-jGV"/>
+                            <constraint firstItem="BZC-v7-RWE" firstAttribute="trailing" secondItem="DPh-mb-Nns" secondAttribute="trailing" constant="30" id="7zr-rx-PBO"/>
+                            <constraint firstItem="DPh-mb-Nns" firstAttribute="leading" secondItem="BZC-v7-RWE" secondAttribute="leading" constant="30" id="BRa-FM-Idc"/>
                             <constraint firstItem="rNe-Oe-Go5" firstAttribute="leading" secondItem="BZC-v7-RWE" secondAttribute="leading" constant="30" id="BdW-kp-cbe"/>
                             <constraint firstItem="FGs-1o-Nzd" firstAttribute="width" secondItem="Cw9-xY-4xo" secondAttribute="width" multiplier="1:1.6" id="Bdd-7K-Mvu"/>
                             <constraint firstItem="uYC-P3-fYO" firstAttribute="top" secondItem="0Zc-mB-hAB" secondAttribute="bottom" constant="25" id="ELz-oc-QKo"/>
                             <constraint firstItem="jjL-2Q-alk" firstAttribute="width" secondItem="Cw9-xY-4xo" secondAttribute="width" multiplier="1:6" id="FQ6-d9-cWP"/>
-                            <constraint firstItem="BZC-v7-RWE" firstAttribute="trailing" secondItem="5c5-pp-2MP" secondAttribute="trailing" constant="20" id="I3v-t5-hri"/>
                             <constraint firstItem="0Zc-mB-hAB" firstAttribute="top" secondItem="zbK-KB-c3Z" secondAttribute="bottom" constant="15" id="Itl-e5-Kkf"/>
                             <constraint firstItem="V9C-4p-wbj" firstAttribute="leading" secondItem="BZC-v7-RWE" secondAttribute="leading" constant="30" id="Jgv-hR-qYq"/>
                             <constraint firstItem="BZC-v7-RWE" firstAttribute="trailing" secondItem="zbK-KB-c3Z" secondAttribute="trailing" constant="30" id="N0V-qv-IAd"/>
@@ -288,7 +304,6 @@
                             <constraint firstItem="0Zc-mB-hAB" firstAttribute="leading" secondItem="BZC-v7-RWE" secondAttribute="leading" constant="30" id="tmf-5i-KMa"/>
                             <constraint firstItem="2s3-5i-ghc" firstAttribute="width" secondItem="Cw9-xY-4xo" secondAttribute="width" multiplier="1:6" id="vHA-bY-EYr"/>
                             <constraint firstItem="uYC-P3-fYO" firstAttribute="leading" secondItem="BZC-v7-RWE" secondAttribute="leading" constant="30" id="x1y-VY-Mcc"/>
-                            <constraint firstItem="BZC-v7-RWE" firstAttribute="bottom" secondItem="5c5-pp-2MP" secondAttribute="bottom" constant="10" id="xox-lm-l6d"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BZC-v7-RWE"/>
                     </view>
@@ -297,7 +312,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="brandField" destination="Nbs-nf-Ddp" id="LxF-yP-YNy"/>
-                        <outlet property="imageView" destination="aZf-7j-35D" id="5wY-1s-Ima"/>
+                        <outlet property="imageCollectionView" destination="DPh-mb-Nns" id="Jzm-lp-w63"/>
                         <outlet property="priceField" destination="xtx-Zz-4Mr" id="2dw-lY-kBf"/>
                         <outlet property="sizeField" destination="w0t-Ql-YLw" id="46l-Sa-7k2"/>
                     </connections>
@@ -350,6 +365,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Cell" width="16" height="16"/>
         <image name="home_icon" width="28" height="25"/>
         <image name="inbox_icon" width="28" height="25"/>
         <image name="notification_icon" width="28" height="25"/>

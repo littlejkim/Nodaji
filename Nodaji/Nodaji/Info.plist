@@ -32,6 +32,8 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>&quot;Need photo for product&quot;</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>&quot;Need photo&quot;</string>
 </dict>
