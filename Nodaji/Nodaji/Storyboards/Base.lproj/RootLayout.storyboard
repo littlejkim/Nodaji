@@ -84,7 +84,7 @@
             <objects>
                 <viewController id="s7T-X5-Fdp" customClass="SellLayoutController" customModule="Nodaji" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cw9-xY-4xo">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V9C-4p-wbj" userLabel="Brand">
@@ -297,6 +297,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="brandField" destination="Nbs-nf-Ddp" id="LxF-yP-YNy"/>
+                        <outlet property="imageView" destination="aZf-7j-35D" id="5wY-1s-Ima"/>
                         <outlet property="priceField" destination="xtx-Zz-4Mr" id="2dw-lY-kBf"/>
                         <outlet property="sizeField" destination="w0t-Ql-YLw" id="46l-Sa-7k2"/>
                     </connections>
@@ -334,6 +335,7 @@
                     <tabBarItem key="tabBarItem" title="Sell" image="sell_icon" id="oR9-cF-etW"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kF8-xv-sCj">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.99215686274509807" green="0.99215686274509807" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
