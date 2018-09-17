@@ -244,32 +244,35 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="DPh-mb-Nns">
                                 <rect key="frame" x="30" y="443" width="315" height="138"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Fcf-8d-LwR">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="2" minimumInteritemSpacing="2" id="Fcf-8d-LwR">
                                     <size key="itemSize" width="75" height="75"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="P4r-Rd-IW2" customClass="SellCollectionViewCell" customModule="Nodaji" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellId" id="P4r-Rd-IW2" customClass="SellCollectionViewCell" customModule="Nodaji" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cell" translatesAutoresizingMaskIntoConstraints="NO" id="kav-AK-Mef">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="add_photo.png" translatesAutoresizingMaskIntoConstraints="NO" id="kav-AK-Mef">
                                                     <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
                                         </view>
                                         <connections>
-                                            <outlet property="imageView" destination="kav-AK-Mef" id="LAQ-Tb-21L"/>
-                                            <outlet property="productImageView" destination="kav-AK-Mef" id="9lu-21-u22"/>
+                                            <outlet property="productImageView" destination="kav-AK-Mef" id="1CR-fv-zkm"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="s7T-X5-Fdp" id="y63-uT-CQe"/>
+                                    <outlet property="delegate" destination="s7T-X5-Fdp" id="oSr-0N-dh2"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -365,7 +368,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Cell" width="16" height="16"/>
+        <image name="add_photo.png" width="25" height="23"/>
         <image name="home_icon" width="28" height="25"/>
         <image name="inbox_icon" width="28" height="25"/>
         <image name="notification_icon" width="28" height="25"/>

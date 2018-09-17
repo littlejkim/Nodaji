@@ -10,7 +10,7 @@ import UIKit
 import BSImagePicker
 import Photos
 
-class SellLayoutController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UICollectionViewDelegate, UICollectionViewDataSource {
+class SellLayoutController: UIViewController, UIImagePickerControllerDelegate, UICollectionViewDelegate, UICollectionViewDataSource {
  
     @IBOutlet weak var imageCollectionView: UICollectionView!
     @IBOutlet weak var priceField: UITextField!
@@ -31,7 +31,7 @@ class SellLayoutController: UIViewController, UIImagePickerControllerDelegate, U
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = imageCollectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! SellCollectionViewCell
+        let cell = imageCollectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as! SellCollectionViewCell
         
         cell.productImageView.image = productImages[indexPath.item]
         return cell
@@ -39,7 +39,7 @@ class SellLayoutController: UIViewController, UIImagePickerControllerDelegate, U
     
     
     @IBAction func uploadImage(_ sender: UIButton) {
-        
+
         let vc = BSImagePickerViewController()
         
         bs_presentImagePickerController(vc, animated: true,
@@ -50,24 +50,21 @@ class SellLayoutController: UIViewController, UIImagePickerControllerDelegate, U
         }, cancel: { (assets: [PHAsset]) -> Void in
             print("Cancel: \(assets)")
         }, finish: { (assets: [PHAsset]) -> Void in
-            print("Finish: \(assets)")
-            print(assets.count)
+//            self.SelectedAssets.removeAll()
+            print("Finished, number of images: \(assets.count)")
             for i in 0..<assets.count
             {
                 self.SelectedAssets.append(assets[i])
-                print(self.SelectedAssets)
-                self.getAllImages()
             }
-
-        }, completion: self.imageCollectionView.reloadData)
+            self.getAllImages()
+        }, completion: nil)
         
     }
     
     func getAllImages() -> Void {
-        print("Assets to images")
+        print("Number of images : " + String(SelectedAssets.count))
         if SelectedAssets.count != 0{
             for i in 0..<SelectedAssets.count{
-                print(i)
                 let manager = PHImageManager.default()
                 let option = PHImageRequestOptions()
                 var thumbnail = UIImage()
@@ -78,6 +75,10 @@ class SellLayoutController: UIViewController, UIImagePickerControllerDelegate, U
                 productImages.append(thumbnail)
                 
             }
+            DispatchQueue.main.async {
+                print("Image collectionview reloaded")
+                self.imageCollectionView?.reloadData()
+            }
         }
         
 
@@ -86,9 +87,11 @@ class SellLayoutController: UIViewController, UIImagePickerControllerDelegate, U
     let brands = ["Balenciaga", "Gucci", "Versace", "Givenchy", "Other"]
     
     var selectedBrand: String?
+    
     override func viewWillAppear(_ animated: Bool) {
         brandField.tintColor = .clear
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         imageCollectionView.dataSource = self
