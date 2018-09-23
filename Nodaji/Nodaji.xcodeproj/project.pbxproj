@@ -14,10 +14,10 @@
 		EC488CD821240D1200F41DB5 /* HomeLayoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC488CD721240D1200F41DB5 /* HomeLayoutController.swift */; };
 		EC488CDA21240D3100F41DB5 /* InboxLayoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC488CD921240D3100F41DB5 /* InboxLayoutController.swift */; };
 		EC488CDC21240D6C00F41DB5 /* NotificationLayoutContorller.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC488CDB21240D6C00F41DB5 /* NotificationLayoutContorller.swift */; };
+		EC5FF2842150314000D2E1E3 /* RootLayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC5FF2832150314000D2E1E3 /* RootLayout.storyboard */; };
 		EC7744B6214DC1DA007EC22B /* SellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7744B5214DC1DA007EC22B /* SellCollectionViewCell.swift */; };
 		EC7E24162116DF61000BF102 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7E24152116DF61000BF102 /* AppDelegate.swift */; };
 		EC7E24182116DF61000BF102 /* RootLayoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7E24172116DF61000BF102 /* RootLayoutController.swift */; };
-		EC7E241B2116DF61000BF102 /* RootLayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7E24192116DF61000BF102 /* RootLayout.storyboard */; };
 		EC7E241D2116DF63000BF102 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC7E241C2116DF63000BF102 /* Assets.xcassets */; };
 		EC7E24202116DF63000BF102 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7E241E2116DF63000BF102 /* LaunchScreen.storyboard */; };
 		EC7E242B2116DF63000BF102 /* NodajiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7E242A2116DF63000BF102 /* NodajiTests.swift */; };
@@ -45,11 +45,11 @@
 		EC488CD721240D1200F41DB5 /* HomeLayoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLayoutController.swift; sourceTree = "<group>"; };
 		EC488CD921240D3100F41DB5 /* InboxLayoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxLayoutController.swift; sourceTree = "<group>"; };
 		EC488CDB21240D6C00F41DB5 /* NotificationLayoutContorller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationLayoutContorller.swift; sourceTree = "<group>"; };
+		EC5FF2832150314000D2E1E3 /* RootLayout.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RootLayout.storyboard; sourceTree = "<group>"; };
 		EC7744B5214DC1DA007EC22B /* SellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellCollectionViewCell.swift; sourceTree = "<group>"; };
 		EC7E24122116DF61000BF102 /* Nodaji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nodaji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC7E24152116DF61000BF102 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC7E24172116DF61000BF102 /* RootLayoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootLayoutController.swift; sourceTree = "<group>"; };
-		EC7E241A2116DF61000BF102 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/RootLayout.storyboard; sourceTree = "<group>"; };
 		EC7E241C2116DF63000BF102 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC7E241F2116DF63000BF102 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC7E24212116DF63000BF102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -168,7 +168,7 @@
 		EC7E243C21172335000BF102 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				EC7E24192116DF61000BF102 /* RootLayout.storyboard */,
+				EC5FF2832150314000D2E1E3 /* RootLayout.storyboard */,
 				ECC0A5BC214C7BBC004AC2B0 /* RegistrationLayout.storyboard */,
 				EC7E243D21172347000BF102 /* Launch Screen */,
 			);
@@ -301,8 +301,8 @@
 			files = (
 				EC7E24202116DF63000BF102 /* LaunchScreen.storyboard in Resources */,
 				ECC0A5BD214C7BBC004AC2B0 /* RegistrationLayout.storyboard in Resources */,
+				EC5FF2842150314000D2E1E3 /* RootLayout.storyboard in Resources */,
 				EC7E241D2116DF63000BF102 /* Assets.xcassets in Resources */,
-				EC7E241B2116DF61000BF102 /* RootLayout.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,14 +411,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EC7E24192116DF61000BF102 /* RootLayout.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC7E241A2116DF61000BF102 /* Base */,
-			);
-			name = RootLayout.storyboard;
-			sourceTree = "<group>";
-		};
 		EC7E241E2116DF63000BF102 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

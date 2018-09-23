@@ -10,10 +10,6 @@ import UIKit
 
 class SellCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var productImageView: UIImageView!
-    
-    var imageName: String! {
-        didSet {
-            productImageView.image = UIImage(named: imageName)
-        }
-    }
+
+
 }

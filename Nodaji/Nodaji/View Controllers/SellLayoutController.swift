@@ -10,8 +10,15 @@ import UIKit
 import BSImagePicker
 import Photos
 
-class SellLayoutController: UIViewController, UIImagePickerControllerDelegate, UICollectionViewDelegate, UICollectionViewDataSource {
+class SellLayoutController: UIViewController, UIScrollViewDelegate, UIImagePickerControllerDelegate, UICollectionViewDelegate, UICollectionViewDataSource {
  
+    
+    
+
+    @IBOutlet weak var contentView: UIView!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var uploadButton: UIButton!
+    @IBOutlet weak var resetButton: UIButton!
     @IBOutlet weak var imageCollectionView: UICollectionView!
     @IBOutlet weak var priceField: UITextField!
     @IBOutlet weak var deliveryFeeField: UITextField!
@@ -25,6 +32,9 @@ class SellLayoutController: UIViewController, UIImagePickerControllerDelegate, U
     var SelectedAssets = [PHAsset]()
     var productImages: [UIImage] = []
 
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return productImages.count
@@ -33,13 +43,28 @@ class SellLayoutController: UIViewController, UIImagePickerControllerDelegate, U
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = imageCollectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as! SellCollectionViewCell
         
-        cell.productImageView.image = productImages[indexPath.item]
+        cell.productImageView.image = productImages[indexPath.row]
+        cell.layer.borderColor = UIColor.lightGray.cgColor
+        cell.layer.borderWidth = 0.5
+        
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = imageCollectionView.cellForItem(at: indexPath)
+        cell?.layer.borderColor = UIColor.gray.cgColor
+        cell?.layer.borderWidth = 2
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        let cell = imageCollectionView.cellForItem(at: indexPath)
+        cell?.layer.borderColor = UIColor.lightGray.cgColor
+        cell?.layer.borderWidth = 0.5
+    }
     
     @IBAction func uploadImage(_ sender: UIButton) {
-
+        
+  
         let vc = BSImagePickerViewController()
         
         bs_presentImagePickerController(vc, animated: true,
@@ -48,15 +73,22 @@ class SellLayoutController: UIViewController, UIImagePickerControllerDelegate, U
         }, deselect: { (asset: PHAsset) -> Void in
             print("Deselected: \(asset)")
         }, cancel: { (assets: [PHAsset]) -> Void in
+            if(self.productImages.count == 0) {
+                self.uploadButton.isHidden = false
+            }
             print("Cancel: \(assets)")
         }, finish: { (assets: [PHAsset]) -> Void in
-//            self.SelectedAssets.removeAll()
-            print("Finished, number of images: \(assets.count)")
             for i in 0..<assets.count
             {
                 self.SelectedAssets.append(assets[i])
             }
             self.getAllImages()
+            DispatchQueue.main.async {
+                self.imageCollectionView.isHidden = false
+                self.uploadButton.isHidden = true
+                print("Image collectionview reloaded")
+                self.imageCollectionView?.reloadData()
+            }
         }, completion: nil)
         
     }
@@ -73,29 +105,43 @@ class SellLayoutController: UIViewController, UIImagePickerControllerDelegate, U
                     thumbnail = result!
                 })
                 productImages.append(thumbnail)
-                
             }
-            DispatchQueue.main.async {
-                print("Image collectionview reloaded")
-                self.imageCollectionView?.reloadData()
-            }
+            
         }
         
-
     }
 
+    @IBAction func resetButton(_ sender: UIButton) {
+        
+        SelectedAssets.removeAll()
+        productImages.removeAll()
+        DispatchQueue.main.async {
+            print("Image collectionview reloaded")
+            print("Number of images" + String(self.productImages.count))
+            self.imageCollectionView.isHidden = true
+            self.uploadButton.isHidden = false
+            self.imageCollectionView?.reloadData()
+        }
+    }
+    
     let brands = ["Balenciaga", "Gucci", "Versace", "Givenchy", "Other"]
     
     var selectedBrand: String?
     
     override func viewWillAppear(_ animated: Bool) {
         brandField.tintColor = .clear
+        imageCollectionView.isHidden = true
+    }
+    
+    @objc func tap(sender: UITapGestureRecognizer){
+        print("tapped")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageCollectionView.dataSource = self
         imageCollectionView.delegate = self
+        imageCollectionView.dataSource = self
+        imageCollectionView.reloadData()
         createBrandPicker()
         createToolbar()
         print("Sell loaded")
