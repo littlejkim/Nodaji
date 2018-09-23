@@ -1,0 +1,6 @@
+framework module Pods_NodajiTests {
+  umbrella header "Pods-NodajiTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

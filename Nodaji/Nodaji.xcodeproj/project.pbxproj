@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5857EE9E0228B51BEE4EAF98 /* Pods_Nodaji.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B12F5115E8A9578A35BE25 /* Pods_Nodaji.framework */; };
+		A1E407A995CEAB195608E771 /* Pods_NodajiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B56557E709CA8952B9F676 /* Pods_NodajiTests.framework */; };
 		EC488CD421240A6200F41DB5 /* SellLayoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC488CD321240A6200F41DB5 /* SellLayoutController.swift */; };
 		EC488CD621240CF100F41DB5 /* ProfileLayoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC488CD521240CF100F41DB5 /* ProfileLayoutController.swift */; };
 		EC488CD821240D1200F41DB5 /* HomeLayoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC488CD721240D1200F41DB5 /* HomeLayoutController.swift */; };
 		EC488CDA21240D3100F41DB5 /* InboxLayoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC488CD921240D3100F41DB5 /* InboxLayoutController.swift */; };
 		EC488CDC21240D6C00F41DB5 /* NotificationLayoutContorller.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC488CDB21240D6C00F41DB5 /* NotificationLayoutContorller.swift */; };
+		EC5FF2842150314000D2E1E3 /* RootLayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC5FF2832150314000D2E1E3 /* RootLayout.storyboard */; };
+		EC7744B6214DC1DA007EC22B /* SellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7744B5214DC1DA007EC22B /* SellCollectionViewCell.swift */; };
 		EC7E24162116DF61000BF102 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7E24152116DF61000BF102 /* AppDelegate.swift */; };
 		EC7E24182116DF61000BF102 /* RootLayoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7E24172116DF61000BF102 /* RootLayoutController.swift */; };
-		EC7E241B2116DF61000BF102 /* RootLayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7E24192116DF61000BF102 /* RootLayout.storyboard */; };
 		EC7E241D2116DF63000BF102 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC7E241C2116DF63000BF102 /* Assets.xcassets */; };
 		EC7E24202116DF63000BF102 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7E241E2116DF63000BF102 /* LaunchScreen.storyboard */; };
 		EC7E242B2116DF63000BF102 /* NodajiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7E242A2116DF63000BF102 /* NodajiTests.swift */; };
@@ -32,15 +35,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2EF5A58BF9245BBD585341A4 /* Pods-Nodaji.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nodaji.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nodaji/Pods-Nodaji.debug.xcconfig"; sourceTree = "<group>"; };
+		320B1D88B6DFB023C9B7E9AD /* Pods-NodajiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NodajiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NodajiTests/Pods-NodajiTests.release.xcconfig"; sourceTree = "<group>"; };
+		66B56557E709CA8952B9F676 /* Pods_NodajiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NodajiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91B12F5115E8A9578A35BE25 /* Pods_Nodaji.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nodaji.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEEDCD1258269388D94F5D79 /* Pods-Nodaji.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nodaji.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nodaji/Pods-Nodaji.release.xcconfig"; sourceTree = "<group>"; };
 		EC488CD321240A6200F41DB5 /* SellLayoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellLayoutController.swift; sourceTree = "<group>"; };
 		EC488CD521240CF100F41DB5 /* ProfileLayoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileLayoutController.swift; sourceTree = "<group>"; };
 		EC488CD721240D1200F41DB5 /* HomeLayoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLayoutController.swift; sourceTree = "<group>"; };
 		EC488CD921240D3100F41DB5 /* InboxLayoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxLayoutController.swift; sourceTree = "<group>"; };
 		EC488CDB21240D6C00F41DB5 /* NotificationLayoutContorller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationLayoutContorller.swift; sourceTree = "<group>"; };
+		EC5FF2832150314000D2E1E3 /* RootLayout.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RootLayout.storyboard; sourceTree = "<group>"; };
+		EC7744B5214DC1DA007EC22B /* SellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellCollectionViewCell.swift; sourceTree = "<group>"; };
 		EC7E24122116DF61000BF102 /* Nodaji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nodaji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC7E24152116DF61000BF102 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC7E24172116DF61000BF102 /* RootLayoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootLayoutController.swift; sourceTree = "<group>"; };
-		EC7E241A2116DF61000BF102 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/RootLayout.storyboard; sourceTree = "<group>"; };
 		EC7E241C2116DF63000BF102 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC7E241F2116DF63000BF102 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC7E24212116DF63000BF102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +58,7 @@
 		EC7E242C2116DF63000BF102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC7E24362116EC30000BF102 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KakaoOpenSDK.framework; path = ../../la/KakaoOpenSDK.framework; sourceTree = "<group>"; };
 		ECC0A5BC214C7BBC004AC2B0 /* RegistrationLayout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegistrationLayout.storyboard; sourceTree = "<group>"; };
+		F064D9273174D8EDD267330F /* Pods-NodajiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NodajiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NodajiTests/Pods-NodajiTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5857EE9E0228B51BEE4EAF98 /* Pods_Nodaji.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,12 +74,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1E407A995CEAB195608E771 /* Pods_NodajiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC013BE410FF5652997864B6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2EF5A58BF9245BBD585341A4 /* Pods-Nodaji.debug.xcconfig */,
+				DEEDCD1258269388D94F5D79 /* Pods-Nodaji.release.xcconfig */,
+				F064D9273174D8EDD267330F /* Pods-NodajiTests.debug.xcconfig */,
+				320B1D88B6DFB023C9B7E9AD /* Pods-NodajiTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EC7E24092116DF61000BF102 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +99,7 @@
 				EC7E24292116DF63000BF102 /* NodajiTests */,
 				EC7E24132116DF61000BF102 /* Products */,
 				EC7E24352116EC30000BF102 /* Frameworks */,
+				EC013BE410FF5652997864B6 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				EC7E24362116EC30000BF102 /* KakaoOpenSDK.framework */,
+				91B12F5115E8A9578A35BE25 /* Pods_Nodaji.framework */,
+				66B56557E709CA8952B9F676 /* Pods_NodajiTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -134,6 +160,7 @@
 				EC488CD721240D1200F41DB5 /* HomeLayoutController.swift */,
 				EC488CD921240D3100F41DB5 /* InboxLayoutController.swift */,
 				EC488CDB21240D6C00F41DB5 /* NotificationLayoutContorller.swift */,
+				EC7744B5214DC1DA007EC22B /* SellCollectionViewCell.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -141,7 +168,7 @@
 		EC7E243C21172335000BF102 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				EC7E24192116DF61000BF102 /* RootLayout.storyboard */,
+				EC5FF2832150314000D2E1E3 /* RootLayout.storyboard */,
 				ECC0A5BC214C7BBC004AC2B0 /* RegistrationLayout.storyboard */,
 				EC7E243D21172347000BF102 /* Launch Screen */,
 			);
@@ -195,9 +222,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC7E242F2116DF63000BF102 /* Build configuration list for PBXNativeTarget "Nodaji" */;
 			buildPhases = (
+				6087368F5E3933A5CE92FD36 /* [CP] Check Pods Manifest.lock */,
 				EC7E240E2116DF61000BF102 /* Sources */,
 				EC7E240F2116DF61000BF102 /* Frameworks */,
 				EC7E24102116DF61000BF102 /* Resources */,
+				A2E189462DFA3902794502FC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -212,6 +241,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC7E24322116DF63000BF102 /* Build configuration list for PBXNativeTarget "NodajiTests" */;
 			buildPhases = (
+				ED1A42D07AD4F92B6E9C9971 /* [CP] Check Pods Manifest.lock */,
 				EC7E24222116DF63000BF102 /* Sources */,
 				EC7E24232116DF63000BF102 /* Frameworks */,
 				EC7E24242116DF63000BF102 /* Resources */,
@@ -271,8 +301,8 @@
 			files = (
 				EC7E24202116DF63000BF102 /* LaunchScreen.storyboard in Resources */,
 				ECC0A5BD214C7BBC004AC2B0 /* RegistrationLayout.storyboard in Resources */,
+				EC5FF2842150314000D2E1E3 /* RootLayout.storyboard in Resources */,
 				EC7E241D2116DF63000BF102 /* Assets.xcassets in Resources */,
-				EC7E241B2116DF61000BF102 /* RootLayout.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +315,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6087368F5E3933A5CE92FD36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nodaji-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2E189462DFA3902794502FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Nodaji/Pods-Nodaji-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BSGridCollectionViewLayout/BSGridCollectionViewLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/BSImagePicker/BSImagePicker.framework",
+				"${BUILT_PRODUCTS_DIR}/BSImageView/BSImageView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BSGridCollectionViewLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BSImagePicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BSImageView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nodaji/Pods-Nodaji-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED1A42D07AD4F92B6E9C9971 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NodajiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EC7E240E2116DF61000BF102 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -296,6 +387,7 @@
 				EC7E24162116DF61000BF102 /* AppDelegate.swift in Sources */,
 				EC488CD621240CF100F41DB5 /* ProfileLayoutController.swift in Sources */,
 				EC488CDA21240D3100F41DB5 /* InboxLayoutController.swift in Sources */,
+				EC7744B6214DC1DA007EC22B /* SellCollectionViewCell.swift in Sources */,
 				EC488CD821240D1200F41DB5 /* HomeLayoutController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,14 +411,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EC7E24192116DF61000BF102 /* RootLayout.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC7E241A2116DF61000BF102 /* Base */,
-			);
-			name = RootLayout.storyboard;
-			sourceTree = "<group>";
-		};
 		EC7E241E2116DF63000BF102 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -454,6 +538,7 @@
 		};
 		EC7E24302116DF63000BF102 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EF5A58BF9245BBD585341A4 /* Pods-Nodaji.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -473,6 +558,7 @@
 		};
 		EC7E24312116DF63000BF102 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEEDCD1258269388D94F5D79 /* Pods-Nodaji.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -492,6 +578,7 @@
 		};
 		EC7E24332116DF63000BF102 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F064D9273174D8EDD267330F /* Pods-NodajiTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -513,6 +600,7 @@
 		};
 		EC7E24342116DF63000BF102 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 320B1D88B6DFB023C9B7E9AD /* Pods-NodajiTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
