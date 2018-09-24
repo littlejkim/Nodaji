@@ -1,4 +1,4 @@
-	//
+		//
 //  ProtectedPageLayoutController.swift
 //  Nodaji
 //
@@ -25,6 +25,7 @@ class ProtectedPageLayoutController: UIViewController {
     
     func viewDidAppear(_ animated: Bool) {
         self.performSegueWithIdentifier("loginPage", sender: self);
+        self.responds(to: "registrationPage")
     }
 
     /*
