@@ -14,7 +14,6 @@ class SellLayoutController: UIViewController, UIScrollViewDelegate, UIImagePicke
  
     
     
-
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var uploadButton: UIButton!
@@ -22,13 +21,10 @@ class SellLayoutController: UIViewController, UIScrollViewDelegate, UIImagePicke
     @IBOutlet weak var imageCollectionView: UICollectionView!
     @IBOutlet weak var priceField: UITextField!
     @IBOutlet weak var deliveryFeeField: UITextField!
-    @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var brandField: UITextField!
     @IBOutlet weak var productNameField: UITextField!
     @IBOutlet weak var categoryField: UITextField!
     @IBOutlet weak var sizeField: UITextField!
-    @IBOutlet weak var totalPriceLabel: UILabel!
-    @IBOutlet weak var imageView: UIImageView!
     var SelectedAssets = [PHAsset]()
     var productImages: [UIImage] = []
 
