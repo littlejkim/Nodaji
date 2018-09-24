@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5857EE9E0228B51BEE4EAF98 /* Pods_Nodaji.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B12F5115E8A9578A35BE25 /* Pods_Nodaji.framework */; };
 		A1E407A995CEAB195608E771 /* Pods_NodajiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B56557E709CA8952B9F676 /* Pods_NodajiTests.framework */; };
+		C7F08BA7215861AD00EB8092 /* ProtectedPageLayoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F08BA6215861AD00EB8092 /* ProtectedPageLayoutController.swift */; };
 		EC488CD421240A6200F41DB5 /* SellLayoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC488CD321240A6200F41DB5 /* SellLayoutController.swift */; };
 		EC488CD621240CF100F41DB5 /* ProfileLayoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC488CD521240CF100F41DB5 /* ProfileLayoutController.swift */; };
 		EC488CD821240D1200F41DB5 /* HomeLayoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC488CD721240D1200F41DB5 /* HomeLayoutController.swift */; };
@@ -39,6 +40,7 @@
 		320B1D88B6DFB023C9B7E9AD /* Pods-NodajiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NodajiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NodajiTests/Pods-NodajiTests.release.xcconfig"; sourceTree = "<group>"; };
 		66B56557E709CA8952B9F676 /* Pods_NodajiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NodajiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91B12F5115E8A9578A35BE25 /* Pods_Nodaji.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nodaji.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7F08BA6215861AD00EB8092 /* ProtectedPageLayoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtectedPageLayoutController.swift; sourceTree = "<group>"; };
 		DEEDCD1258269388D94F5D79 /* Pods-Nodaji.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nodaji.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nodaji/Pods-Nodaji.release.xcconfig"; sourceTree = "<group>"; };
 		EC488CD321240A6200F41DB5 /* SellLayoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellLayoutController.swift; sourceTree = "<group>"; };
 		EC488CD521240CF100F41DB5 /* ProfileLayoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileLayoutController.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				EC488CD921240D3100F41DB5 /* InboxLayoutController.swift */,
 				EC488CDB21240D6C00F41DB5 /* NotificationLayoutContorller.swift */,
 				EC7744B5214DC1DA007EC22B /* SellCollectionViewCell.swift */,
+				C7F08BA6215861AD00EB8092 /* ProtectedPageLayoutController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -388,6 +391,7 @@
 				EC488CD621240CF100F41DB5 /* ProfileLayoutController.swift in Sources */,
 				EC488CDA21240D3100F41DB5 /* InboxLayoutController.swift in Sources */,
 				EC7744B6214DC1DA007EC22B /* SellCollectionViewCell.swift in Sources */,
+				C7F08BA7215861AD00EB8092 /* ProtectedPageLayoutController.swift in Sources */,
 				EC488CD821240D1200F41DB5 /* HomeLayoutController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

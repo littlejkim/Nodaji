@@ -1,10 +1,12 @@
-//
+	//
 //  ProtectedPageLayoutController.swift
 //  Nodaji
 //
 //  Created by Jung Eek Bang on 9/23/18.
 //  Copyright © 2018 Nodaji. All rights reserved.
 //
+//  Description: This file is about the interphase and connection controll of the login and registration page. When the user is not login, it disables the user to continue.
+    
 
 import UIKit
 
@@ -21,6 +23,9 @@ class ProtectedPageLayoutController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func viewDidAppear(_ animated: Bool) {
+        self.performSegueWithIdentifier("loginPage", sender: self);
+    }
 
     /*
     // MARK: - Navigation
